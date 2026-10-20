@@ -5,8 +5,8 @@ import "./mobile-story.css";
 import AuthCallback from "./auth-callback";
 
 export const metadata: Metadata = {
-  title: "Eshme-Commerce",
-  description: "A seller workspace for research, sourcing and commerce operations.",
+  title: "Emberline",
+  description: "Find the right electrification path for a more resilient, lower-friction home.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
