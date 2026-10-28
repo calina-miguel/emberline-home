@@ -1,4 +1,6 @@
 import "./emberline.css";
+import "./pathway.css";
+import { Pathway } from "./pathway";
 
 export const metadata = { title: "Emberline | Home, rewired", description: "A considered way to explore home electrification and choose a fitting next step." };
 
@@ -39,7 +41,7 @@ export default function Page() {
       <div className="plan-heading"><p className="ember-kicker"><span /> A MORE USEFUL START</p><h2>Every home has<br />its own <i>sequence.</i></h2><p>Get clear on your first question before choosing a product or project.</p></div>
       <div className="plan-steps">{steps.map(([n,title,copy]) => <article className="plan-step" key={n}><span>{n}</span><div><h3>{title}</h3><p>{copy}</p></div><b>↗</b></article>)}</div>
     </section>
-    <section className="ember-contact"><div><p className="ember-kicker"><span /> YOUR HOME, YOUR NEXT MOVE</p><h2>Make room<br />for <i>what's next.</i></h2></div><form className="ember-form"><label htmlFor="ember-email">Get a home upgrade planning note</label><p>One thoughtful starting point, sent to your inbox.</p><div className="ember-input"><input id="ember-email" type="email" placeholder="Email address" required /><button aria-label="Send me the planning note">↗</button></div><small>No pressure. Just a useful place to begin.</small></form></section>
+    <section className="ember-contact"><div><p className="ember-kicker"><span /> YOUR HOME, YOUR NEXT MOVE</p><h2>Make room<br />for <i>what's next.</i></h2><p>Answer three questions for a practical first step.</p></div><Pathway /></section>
     <footer className="ember-footer"><a className="ember-brand" href="#home"><span className="ember-symbol">E</span>EMBERLINE</a><span>Home energy, thoughtfully considered.</span><span>© 2026 EMBERLINE</span></footer>
   </main>;
 }
