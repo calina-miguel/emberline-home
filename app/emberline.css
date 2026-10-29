@@ -1,5 +1,5 @@
 :root { --ember-ink:#292d2a; --ember-paper:#f3efe5; --ember-orange:#d9663e; --ember-clay:#b64e31; --ember-sun:#e5bb65; --ember-muted:#72756c; }
-.ember-page { background:var(--ember-paper); color:var(--ember-ink); font-family:Arial,Helvetica,sans-serif; overflow:clip; }
+.ember-page { background:var(--ember-paper); color:var(--ember-ink); font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif; overflow:clip; }
 .ember-nav,.ember-hero,.ember-plan,.ember-contact,.ember-footer { width:min(1280px,calc(100% - 72px)); margin:auto; }
 .ember-nav { height:84px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #d8d2c3; }
 .ember-brand { display:flex; align-items:center; gap:10px; color:inherit; text-decoration:none; font-size:12px; font-weight:900; letter-spacing:.18em; }
@@ -24,3 +24,7 @@
 @keyframes draw-home { to { stroke-dashoffset:0; } } @keyframes energy-flow { to { stroke-dashoffset:-170; } } @keyframes node-pop { from { opacity:0; scale:.2; } to { opacity:1; scale:1; } } @keyframes sun-breathe { 50% { scale:1.07; box-shadow:0 0 65px rgb(229 187 101 / 38%); } } @keyframes ray-turn { to { rotate:1turn; } } @keyframes tag-drift { 50% { translate:0 -7px; } }
 @media (max-width:800px) { .ember-nav,.ember-hero,.ember-plan,.ember-contact,.ember-footer { width:calc(100% - 36px); }.nav-caption { display:none; }.ember-hero { min-height:auto; grid-template-columns:1fr; padding-block:60px 50px; }.ember-copy h1 { font-size:clamp(4.5rem,18vw,7rem); }.house-scene { min-height:390px; }.house-scene::after { width:400px;height:400px; }.sun-disc { width:90px;height:90px;top:35px;right:45px; }.house-stamp { right:4%; }.tag-heat { left:0; }.tag-power { right:0; }.ember-plan { grid-template-columns:1fr; gap:30px; padding-block:80px; }.ember-contact { grid-template-columns:1fr; gap:22px; padding:35px 22px; }.ember-footer { flex-wrap:wrap;padding-block:22px; }.ember-footer>span:nth-child(2) { display:none; } }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; transition-duration:.01ms!important; } }
+
+/* Emberline pairs a compact architectural display face with open utility text. */
+.ember-page :is(h1,h2,h3){font-family:'Bahnschrift SemiCondensed','Franklin Gothic Medium','Arial Narrow',sans-serif;font-stretch:condensed;letter-spacing:-.035em}
+.ember-page :is(.ember-kicker,.ember-nav,.ember-footer){letter-spacing:.14em}
